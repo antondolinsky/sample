@@ -1,0 +1,149 @@
+button {
+  border: 1px solid Black;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;  
+}
+
+[data-show="false"] {
+  display: none;
+}
+[data-show="true"] {
+  display: initial;
+}
+
+[data-app] {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+[data-modeselect] {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 24px 0;
+}
+
+[data-modeselect-button] {
+  width: 120px;
+  margin: 0 4px;
+  background-color: #BBBBBB;
+}
+
+[data-mode="ADD"] [data-modeselect-button="ADD"] {
+  background-color: #FFFFFF;
+}
+
+[data-mode="GET"] [data-modeselect-button="GET"] {
+  background-color: #FFFFFF;
+}
+
+[data-mode="ADD_SUCCESS"] > *,
+[data-mode="DELETE_SUCCESS"] > * {
+  margin: 8px 0;
+}
+
+[data-add-record] {
+  display: flex;
+  flex-direction: column;
+}
+
+[data-field] {
+  display: flex;
+  margin:  2px 0;
+}
+
+[data-field] > [data-label] {
+  width: 240px;
+}
+
+[data-field] > input {
+  width: 240px;
+}
+
+[data-field] > input[type="date"],
+[data-field] > input[type="time"] {
+  width: 243px;
+}
+
+[data-field] > input[type="number"],
+[data-field] > input[type="date"],
+[data-field] > input[type="time"] {
+  cursor: pointer;
+}
+
+[data-add-record] button[type="submit"] {
+  align-self: center;
+  width: 240;
+  margin-top: 24px;
+}
+
+[data-errormessage] {
+  margin: 8px 0 8px 0;
+  color: #FF0000;
+  text-align: center;
+}
+
+[data-standardbutton] {
+  width: 120px;
+}
+
+[data-widebutton] {
+  width: 160px;
+}
+
+[data-getrecords] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+[data-getrecords][data-authorized="false"] > * {
+  margin: 8px 0;
+}
+
+[data-record][data-expanded="false"] {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+[data-record][data-expanded="true"] {
+  margin: 16px 0;
+}
+
+[data-recordfield-label] {
+  margin: 0 8px 0 0;
+  font-weight: 700;
+}
+[data-recordfield-label]:after {
+  content: ':';
+}
+
+[data-recordphoto] {
+  width: 400px;
+}
+
+[data-expandedlabel] {
+  margin: 0 0 16px 0;
+}
+
+[data-recordstable] th {
+  text-align: left;
+}
+
+[data-recordstable] > tbody > tr:hover {
+  background-color: #AAAAFF;
+}
+
+[data-recordstable] td {
+  padding: 0 16px 0 0;
+}
+
+[data-note] {
+  margin: 8px 0 0 0;
+  font-size: 12px;
+}
+
+[data-deleterecord] {
+  cursor: pointer;
+}
